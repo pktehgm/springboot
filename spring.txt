@@ -134,4 +134,56 @@ Spring Boot
 
 Spring Initializr, Starter Projects, Auto Configuration, Spring Boot DevTools
 
+Production Ready -> Logging, Configuration for different Env - Profiles, ConfigurationProperties, Monitoring - Spring Boot Actuator
 
+Spring Boot Starter Projects - https://start.spring.io/
+
+For my App need a lot of frameworks for features:
+	Build REST API - Spring, Spring MVC, Tomcat, JSON conversion
+	Write UT - Spring Test, JUnit, Mockito
+
+Starters - convenient dependency descriptors for diff features (so sarters are dependency descriptors)
+Spring Boot - provides variety of starter projects:
+	- Web Application & REST API - Spring Boot Starter Web - spring-webmvc, spring-web, spring-boot-starter-tomcat, spring-boot-starter-json
+	- UT - Spring Boot Starter Test
+	- Talk to DB using JPA - Spring Boot Starter Data JPA
+	- Talk to DB using JDBC - Spring Boot Starter JDBC
+	- Secure your web app or REST API - Spring Boot Starter Security
+
+
+
+JPA and Hibernate w/ Spring & Spring Boot
+
+Build Java Web Application w/ Spring Framework, Spring Boot and Hibernate
+
+Build Java REST API w/ Spring Framework, Spring Boot and Hibernate
+
+Spring AOP w/ Spring Boot
+
+Gradle w/ Spring
+
+Docker w/ Spring
+
+UT w/ JUnit
+
+Java Full Stack Application w/ Spring Boot and React
+
+React Components with Counter Example
+
+Java Todo Full Stack Application w/ Spring Boot and React
+
+Connecting Spring Boot REST API w/ React Frontend - Java Full Stack App
+
+Connecting Java Full Stack Application(Spring Boot and React) w/ JPA and Hibernate
+
+Mockito for Spring Boot Projects
+
+Securing Spring Boot Application w/ Spring Security
+
+Cloud and AWS
+
+Compute Services in AWS
+
+Deploy Spring Boot Application to AWS
+
+Functional Programming JAVA
