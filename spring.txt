@@ -142,6 +142,8 @@ For my App need a lot of frameworks for features:
 	Build REST API - Spring, Spring MVC, Tomcat, JSON conversion
 	Write UT - Spring Test, JUnit, Mockito
 
+Spring Boot Initializr - web tool to generate Spring Boot projects with dependencies
+
 Starters - convenient dependency descriptors for diff features (so sarters are dependency descriptors)
 Spring Boot - provides variety of starter projects:
 	- Web Application & REST API - Spring Boot Starter Web - spring-webmvc, spring-web, spring-boot-starter-tomcat, spring-boot-starter-json
@@ -150,7 +152,22 @@ Spring Boot - provides variety of starter projects:
 	- Talk to DB using JDBC - Spring Boot Starter JDBC
 	- Secure your web app or REST API - Spring Boot Starter Security
 
+Spring Boot Autoconfiguration - automatically configures spring application based on dependencies in classpaths
+application.properties or application.yml - configure spring boot applications
+Spring Boot Starter Web
+    - DispacherServletAutoConfiguration
+    - EmbeddedWebServerFactoryCustomizerAutoConfiguration
+    - Default Error Pages - ErrorMvcAutoConfiguration
+    - Bean to JSON converters - JacksonHttpMessageConvertersConfigurations
 
+Spring Boot DevTools - improve developer experience
+    - automatic restart
+    - live reload
+    - configurations for development only
+dependecies in pom.xml or build.gradle must restart manually
+
+
+//////////////////////////////////////////////////////
 
 JPA and Hibernate w/ Spring & Spring Boot
 

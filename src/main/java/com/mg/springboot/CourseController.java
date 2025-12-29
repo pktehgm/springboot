@@ -27,7 +27,8 @@ public class CourseController {
         return Arrays.asList(
                 new Course(1, "Learn Spring Boot", "AAA"),
                 new Course(2, "Learn Spring MVC", "BBB"),
-                new Course(3, "Learn Spring Security", "CCC")
+                new Course(3, "Learn Spring Security", "CCC"),
+                new Course(4, "Learn Spring Data JPA", "DDD")
         );
     }
 }
