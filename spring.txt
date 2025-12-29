@@ -166,6 +166,28 @@ Spring Boot DevTools - improve developer experience
     - configurations for development only
 dependecies in pom.xml or build.gradle must restart manually
 
+App profiles - application-dev.properties, application-prod.properties
+
+different environments - dev, qa, stage, test, prod
+different config - databases, webservices
+
+ConfigurationProperties - bind external configurations to strongly typed Java classes
+
+War - Web Application Archive - deployable unit for web applications - old way
+Deploy to web server - Tomcat, Jetty, Wildfly (Jboss)
+
+Embedded Web Server - Spring Boot - embedded Tomcat by default - no need to deploy war file to external server
+    - run as standalone java application - java -jar myapp.jar
+
+Spring Boot Actuator - production ready features
+    - beans - complete list of spring beans exposed via HTTP endpoint
+    - health checks
+    - metrics
+    - monitoring
+    - auditing
+    - environment info
+
+@SpringBootApplication annotation is a combination of 3 annotations: @SpringBootConfiguration + @EnableAutoConfiguration + @ComponentScan
 
 //////////////////////////////////////////////////////
 
