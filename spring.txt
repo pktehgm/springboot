@@ -103,10 +103,10 @@ Annotations vs XML Configuration (Old projects)
 Spring Stereotype Annotations
 	Specialization of @Component
 		@Service - class has business logic
-		@Controller - is a controller - eg. web controller, web applications with rest api
-		@Repository - class used to retrive and manipulate data in DB - wire to JDBC exceptions
+		@Controller - is a controller - e.g. web controller, web applications with rest api
+		@Repository - class used to retrieve and manipulate data in DB - wire to JDBC exceptions
 
-AOP - ASPECT ORIENTED Programming - adddtional behavior
+AOP - ASPECT ORIENTED Programming - additional behavior
 
 Spring Core above
 
@@ -193,7 +193,72 @@ Spring Boot Actuator - production ready features
 
 JPA and Hibernate w/ Spring & Spring Boot
 
+Setup Spring Boot project with JPA and Hibernate
+H2 Console and Create a sql table in H2 Database
+
+JDBC
+write a lot of SQL queries, a lot of java code
+
+Spring JDBC - less code, use JdbcTemplate, handle exceptions
+
+Command Line Runner - run code after spring boot application starts
+
+Spring JPA - map entities to database tables, less code, no SQL queries, use repository interfaces
+Entity Manager - manage entities, persist, merge, remove, find
+
+Spring Data JPA - build on top of JPA, create repository interfaces, less code, CRUD operations, pagination, sorting
+CRUD - Create, Read, Update, Delete
+
+Hibernate - most popular JPA implementation, ORM - Object Relational Mapping, map Java objects to database tables
+@Entity - can use from the JPA or Hibernate package
+Not lock into Hibernate - use JPA interfaces
+
+//////////////////////////////////////////////////////
+
 Build Java Web Application w/ Spring Framework, Spring Boot and Hibernate
+
+Web Applications concepts
+Spring MVC Architecture
+Spring Boot
+Frameworks/Tools
+
+RequestMapping - map HTTP requests to handler methods
+HTML
+JSP - Java Server Pages to get Views
+
+RequestParam
+Model Map
+
+HTML - expression language - EL - ${}
+
+Logging - SLF4J + spring config
+
+DispacherServlet - front controller
+Model 1 = all code in views in JSP - not recommended, Queries in JSP, Business Logic in JSP
+
+Model 2 Architecture - MVC Model View Controller - Separation of Concerns
+    - Model - Data to generate views
+    - View - JSP, HTML - presentation layer, Show information to users
+    - Controller - handle HTTP requests, process data, return views, Control the flow
+
+Front Controller Pattern - all requests go to a single controller - DispatcherServlet (Front Controller)
+    - controls the flow oto controllers and views
+Spring MVC Front Controller - DispatcherServlet
+    - receives all HTTP requests
+    - processes HTTP requests
+        - identifies correct controller method based on request URL (dispatches to controller)
+        - executes controller method - returns model and view name
+        - identifies correct view - using ViewResolver
+        - executes view
+    - returns HTTP response to client
+
+POST is used to send user/password securely - not in URL form with GET
+
+Request vs Model vs Session
+SessionAttribute - store data in user session across multiple requests
+
+
+//////////////////////////////////////////////////////
 
 Build Java REST API w/ Spring Framework, Spring Boot and Hibernate
 
