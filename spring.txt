@@ -106,6 +106,8 @@ Spring Stereotype Annotations
 		@Controller - is a controller - e.g. web controller, web applications with rest api
 		@Repository - class used to retrieve and manipulate data in DB - wire to JDBC exceptions
 
+@Configuration - singelton guarantability
+
 AOP - ASPECT ORIENTED Programming - additional behavior
 
 Spring Core above
@@ -185,7 +187,8 @@ Spring Boot Actuator - production ready features
     - metrics
     - monitoring
     - auditing
-    - environment info
+    - environment info]
+
 
 @SpringBootApplication annotation is a combination of 3 annotations: @SpringBootConfiguration + @EnableAutoConfiguration + @ComponentScan
 
@@ -257,32 +260,127 @@ POST is used to send user/password securely - not in URL form with GET
 Request vs Model vs Session
 SessionAttribute - store data in user session across multiple requests
 
+JSTL - Jakarta Standard Tag Library - tag library for JSP
+https://docs.oracle.com/javaee/5/jstl/1.1/docs/tlddocs/c/tld-summary.html
+
+<%@ taglib prefix="c" uri="jakarta.tags.core" %>
+code to search code and add in tag
+
+Bootstrap CSS framework
+
+Webjars
+
+//////////////////////////////////////////////////////
+Build Java REST API w/ Spring Framework, Spring Boot and Hibernate
+
+REST API - Representational State Transfer Application Programming Interface
+REST Principles
+    - Stateless - each request contains all info needed
+    - Client-Server Architecture - separation of concerns
+    - Uniform Interface - standard methods (GET, POST, PUT, DELETE)
+    - Resource-Based - resources identified by URIs
+    - Representation - resources represented in different formats (JSON, XML)
+    - HATEOAS - Hypermedia as the Engine of Application State
+
+Spring MVC for REST API
+    - @RestController - class is a REST controller
+    - @RequestMapping - map HTTP requests to handler methods
+    - @GetMapping - handle HTTP GET requests
+    - @PostMapping - handle HTTP POST requests
+    - @PutMapping - handle HTTP PUT requests
+    - @DeleteMapping - handle HTTP DELETE requests
+    - @PathVariable - extract variables from URI
+    - @RequestBody - bind HTTP request body to Java object
+    - @ResponseBody - bind Java object to HTTP response body
+    - Exception Handling - @ControllerAdvice, @ExceptionHandler
+
+Data Validation - @Valid, @NotNull, @Size, @Email
 
 //////////////////////////////////////////////////////
 
-Build Java REST API w/ Spring Framework, Spring Boot and Hibernate
-
 Spring AOP w/ Spring Boot
+
+Aspect Oriented Programming (AOP) - separate cross-cutting concerns from business logic
+Cross-Cutting Concerns - functionality that affects multiple parts of an application
+    - Logging
+    - Security
+    - Transaction Management
+    - Caching
+    - Error Handling
+
+AspectJ
+
+@Aspect
+@Before
+@BeforeReturning
+@BeforeThrowing
+@Pointcut
+@After
+@AfterReturning
+@AfterThrowing
+@Around
+
+//////////////////////////////////////////////////////
 
 Gradle w/ Spring
 
 Docker w/ Spring
 
+//////////////////////////////////////////////////////
+
 UT w/ JUnit
+
+@Test
+@BeforeEach
+@AfterEach
+@BeforeAll
+@AfterAll
+
+//////////////////////////////////////////////////////
 
 Java Full Stack Application w/ Spring Boot and React
 
+Java Full Stack Application = Backend + Frontend
+
+jsx - JavaScript XML - syntax extension for JavaScript - write HTML elements in JavaScript and place them in the DOM
+js - JavaScript
+
+//////////////////////////////////////////////////////
+
 React Components with Counter Example
+
+npm - Node Package Manager - package manager for JavaScript
+npx - Node Package Execute - run Node packages without installing them globally
+
+//////////////////////////////////////////////////////
 
 Java Todo Full Stack Application w/ Spring Boot and React
 
+//////////////////////////////////////////////////////
+
 Connecting Spring Boot REST API w/ React Frontend - Java Full Stack App
+
+//////////////////////////////////////////////////////
 
 Connecting Java Full Stack Application(Spring Boot and React) w/ JPA and Hibernate
 
+//////////////////////////////////////////////////////
+
 Mockito for Spring Boot Projects
 
+Mocking API
+@Mock - create mock object
+@InjectMocks - inject mock objects into tested object
+
+//////////////////////////////////////////////////////
+
 Securing Spring Boot Application w/ Spring Security
+
+Spring Security - authentication and authorization framework for Java applications
+Authentication - verify user identity
+Authorization - control access to resources based on user roles/permissions
+
+//////////////////////////////////////////////////////
 
 Cloud and AWS
 
@@ -290,4 +388,8 @@ Compute Services in AWS
 
 Deploy Spring Boot Application to AWS
 
+//////////////////////////////////////////////////////
+
 Functional Programming JAVA
+
+Functional Programming - programming paradigm that treats computation as the evaluation of mathematical functions and avoids changing state and mutable data
